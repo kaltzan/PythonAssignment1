@@ -1,0 +1,6 @@
+import pandas as pd
+
+def from_xlsx_to_csv(file):
+    excel_data = pd.read_excel(file)
+    excel_data.to_csv('iris-data-as-csv.csv', encoding='utf-8')
+from_xlsx_to_csv('iris_data.xlsx')
